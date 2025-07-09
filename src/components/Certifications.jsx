@@ -1,5 +1,4 @@
 import React from 'react';
-
 import certificate1 from '../assets/certificate1.pdf';
 import certificate2 from '../assets/certificate2.pdf';
 import certificate3 from '../assets/certificate3.pdf';
@@ -17,103 +16,101 @@ import certificate14 from '../assets/certificate14.pdf';
 import certificate15 from '../assets/certificate15.pdf';
 import certificate16 from '../assets/certificate16.jpg';
 
-import pdfPreview from '../assets/pdfPreview.png'; // 📎 your placeholder image for PDFs
-
 const certificates = [
   {
     title: 'Principles of Generative AI',
     file: certificate1,
-    image: pdfPreview,
+    image: certificate1, // Use the jpg as preview
     description: 'Intro to foundational concepts in GenAI.',
   },
   {
     title: 'Applied Generative AI',
     file: certificate2,
-    image: pdfPreview,
+    image: certificate2,
     description: 'Hands-on GenAI implementation techniques.',
   },
   {
     title: 'Intro to OpenAI GPT Models',
     file: certificate3,
-    image: pdfPreview,
+    image: certificate3,
     description: 'Fundamentals of GPT-based language models.',
   },
   {
     title: 'GPT-3 for Developers',
     file: certificate4,
-    image: pdfPreview,
+    image: certificate4,
     description: 'Building apps with GPT-3 API.',
   },
   {
     title: 'Generative Models for Developers',
     file: certificate5,
-    image: pdfPreview,
+    image: certificate5,
     description: 'Focus on diffusion and transformer-based models.',
   },
   {
     title: 'NLP using Python',
     file: certificate6,
-    image: pdfPreview,
+    image: certificate6,
     description: 'Text preprocessing and NLTK basics.',
   },
   {
     title: 'Practical AWS for DevOps',
     file: certificate7,
-    image: pdfPreview,
+    image: certificate7,
     description: 'Learned CI/CD with AWS.',
   },
   {
     title: 'Automation with Ansible',
     file: certificate8,
-    image: pdfPreview,
+    image: certificate8,
     description: 'Hands-on with YAML and Playbooks.',
   },
   {
     title: 'Practical Jenkins',
     file: certificate9,
-    image: pdfPreview,
+    image: certificate9,
     description: 'Pipeline creation and automation.',
   },
   {
     title: 'Linux for DevOps',
     file: certificate10,
-    image: pdfPreview,
+    image: certificate10,
     description: 'Linux commands, bash scripting.',
   },
   {
     title: 'Dockerization Techniques',
     file: certificate11,
-    image: pdfPreview,
+    image: certificate11,
     description: 'Containerized app deployment with Docker.',
   },
   {
     title: 'DevOps Foundation',
     file: certificate12,
-    image: pdfPreview,
+    image: certificate12,
     description: 'Intro to CI/CD, automation pipelines.',
   },
   {
     title: 'CI/CD Pipeline with GitHub',
     file: certificate13,
-    image: pdfPreview,
+    image: certificate13,
     description: 'Created and deployed full pipelines.',
   },
   {
     title: 'Agile Methodology',
     file: certificate14,
-    image: pdfPreview,
+    image: certificate14,
     description: 'Scrum roles and agile sprints.',
   },
   {
     title: 'Junos Associate',
     file: certificate15,
-    image: pdfPreview,
+    image: certificate15,
     description: 'Certified Juniper network associate.',
   },
   {
     title: 'Data Science with Python',
-    file: certificate16,
-    image: certificate16,
+    file: certificate1, // Placeholder; you can update this to certificate16.pdf if needed
+    image: certificate15,
     description: 'Data wrangling, analysis and visualization.',
   },
 ];
@@ -160,4 +157,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default Certifications; 
