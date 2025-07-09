@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Import all PDFs
 import certificate1 from '../assets/certificate1.pdf';
 import certificate2 from '../assets/certificate2.pdf';
 import certificate3 from '../assets/certificate3.pdf';
@@ -14,104 +16,29 @@ import certificate12 from '../assets/certificate12.pdf';
 import certificate13 from '../assets/certificate13.pdf';
 import certificate14 from '../assets/certificate14.pdf';
 import certificate15 from '../assets/certificate15.pdf';
-import certificate16 from '../assets/certificate16.jpg';
+
+// Use this image as preview for all
+import previewImage from '../assets/certificate16.jpg';
 
 const certificates = [
-  {
-    title: 'Principles of Generative AI',
-    file: certificate1,
-    image: certificate16, // Use the jpg as preview
-    description: 'Intro to foundational concepts in GenAI.',
-  },
-  {
-    title: 'Applied Generative AI',
-    file: certificate2,
-    image: certificate16,
-    description: 'Hands-on GenAI implementation techniques.',
-  },
-  {
-    title: 'Intro to OpenAI GPT Models',
-    file: certificate3,
-    image: certificate16,
-    description: 'Fundamentals of GPT-based language models.',
-  },
-  {
-    title: 'GPT-3 for Developers',
-    file: certificate4,
-    image: certificate16,
-    description: 'Building apps with GPT-3 API.',
-  },
-  {
-    title: 'Generative Models for Developers',
-    file: certificate5,
-    image: certificate16,
-    description: 'Focus on diffusion and transformer-based models.',
-  },
-  {
-    title: 'NLP using Python',
-    file: certificate6,
-    image: certificate16,
-    description: 'Text preprocessing and NLTK basics.',
-  },
-  {
-    title: 'Practical AWS for DevOps',
-    file: certificate7,
-    image: certificate16,
-    description: 'Learned CI/CD with AWS.',
-  },
-  {
-    title: 'Automation with Ansible',
-    file: certificate8,
-    image: certificate16,
-    description: 'Hands-on with YAML and Playbooks.',
-  },
-  {
-    title: 'Practical Jenkins',
-    file: certificate9,
-    image: certificate16,
-    description: 'Pipeline creation and automation.',
-  },
-  {
-    title: 'Linux for DevOps',
-    file: certificate10,
-    image: certificate16,
-    description: 'Linux commands, bash scripting.',
-  },
-  {
-    title: 'Dockerization Techniques',
-    file: certificate11,
-    image: certificate16,
-    description: 'Containerized app deployment with Docker.',
-  },
-  {
-    title: 'DevOps Foundation',
-    file: certificate12,
-    image: certificate16,
-    description: 'Intro to CI/CD, automation pipelines.',
-  },
-  {
-    title: 'CI/CD Pipeline with GitHub',
-    file: certificate13,
-    image: certificate16,
-    description: 'Created and deployed full pipelines.',
-  },
-  {
-    title: 'Agile Methodology',
-    file: certificate14,
-    image: certificate16,
-    description: 'Scrum roles and agile sprints.',
-  },
-  {
-    title: 'Junos Associate',
-    file: certificate15,
-    image: certificate16,
-    description: 'Certified Juniper network associate.',
-  },
+  { title: 'Principles of Generative AI', file: certificate1 },
+  { title: 'Applied Generative AI', file: certificate2 },
+  { title: 'Intro to OpenAI GPT Models', file: certificate3 },
+  { title: 'GPT-3 for Developers', file: certificate4 },
+  { title: 'Generative Models for Developers', file: certificate5 },
+  { title: 'NLP using Python', file: certificate6 },
+  { title: 'Practical AWS for DevOps', file: certificate7 },
+  { title: 'Automation with Ansible', file: certificate8 },
+  { title: 'Practical Jenkins', file: certificate9 },
+  { title: 'Linux for DevOps', file: certificate10 },
+  { title: 'Dockerization Techniques', file: certificate11 },
+  { title: 'DevOps Foundation', file: certificate12 },
+  { title: 'CI/CD Pipeline with GitHub', file: certificate13 },
+  { title: 'Agile Methodology', file: certificate14 },
+  { title: 'Junos Associate', file: certificate15 },
   {
     title: 'Data Science with Python',
-    file: certificate16, // Placeholder; you can update this to certificate16.pdf if needed
-    image: certificate16,
-    description: 'Data wrangling, analysis and visualization.',
+    file: previewImage, // this one is image itself
   },
 ];
 
@@ -135,12 +62,14 @@ const Certifications = () => {
               data-aos-delay={index * 50}
             >
               <img
-                src={cert.image}
+                src={previewImage}
                 alt={cert.title}
                 className="h-36 w-auto mb-4 rounded shadow object-contain bg-white"
               />
               <h3 className="text-lg font-semibold mb-2">{cert.title}</h3>
-              <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">{cert.description}</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
+                View or download your certificate
+              </p>
               <a
                 href={cert.file}
                 target="_blank"
@@ -157,4 +86,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications; 
+export default Certifications;
